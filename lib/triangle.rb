@@ -20,13 +20,13 @@ class Triangle
       raise TriangleError if
         @side1 <=0 || @side2 <= 0 || @side3 <= 0
       end
-        end
-      end
     end
-
-  class TriangleError < StandardError
-    def maessage
-      "not a triangle"
-    end
-
   end
+end
+
+class TriangleError < StandardError
+  def maessage
+    "not a triangle"
+  end
+
+end
